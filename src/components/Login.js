@@ -22,8 +22,10 @@ const Login = () => {
           email.current.value,
           password.current.value
         );
-
     setErrorMessage(message);
+    if (message) return;
+
+    //write sign in and sign up logic
   };
   const handleIsSignInForm = () => {
     setIsSingInForm(!isSingInForm);
